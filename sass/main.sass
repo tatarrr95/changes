@@ -1,0 +1,1882 @@
+$color-blue: #0aaed3
+$color-nonactivegrey: #bcbcbc
+
+
+// .clearfix
+//   &:before
+//     content: " "
+//     display: table
+//   &:after
+//     content: " "
+//     display: table
+//     clear: both
+
+// .remodal-wrapper
+//   padding: 0px 0px
+//   text-align: left
+
+.menu-modal-wrapper
+  padding: 0px 0px
+  text-align: left
+
+.menu-modal
+  min-height: 100% !important
+  margin-left: 0px !important
+  padding: 20px
+
+.modal-video
+  padding: 0px
+  width: 760px
+
+button
+  -moz-transition: all 0.3s ease-out
+  -o-transition: all 0.3s ease-out
+  -webkit-transition: all 0.3s ease-out
+  cursor: pointer
+button:hover
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+
+
+.row-flex
+  display: flex
+  flex-flow: row wrap
+
+.pad0
+  padding: 0
+
+@media all and (max-width: 768px)
+  .mobile-header
+    font-size: 30px !important
+
+
+body p, span
+  font-family: 'PT Sans', sans-serif
+  // color: #444444
+  font-size: 16px
+  color: #444444
+
+a
+  color: $color-blue
+
+button
+  cursor: pointer
+
+input
+  border: 2px solid $color-blue
+  border-radius: 3px
+  font-size: 20px
+
+label 
+  display: inline-block
+  cursor: pointer
+  position: relative
+.checkbox:not(checked)
+  position: absolute
+  opacity: 0
+.checkbox:not(checked) + label
+  position: relative /* будем позиционировать псевдочекбокс относительно label */
+  padding: 0 0 0 30px /* оставляем слева от label место под псевдочекбокс */
+.checkbox:not(checked) + label:before
+  content: ''
+  position: absolute
+  background-image: url(../img/spritesheet.png)
+  background-repeat: no-repeat
+  width: 22px
+  height: 22px
+  background-position: -255px -309px;
+  left: 0
+.checkbox:checked + label:before
+  content: ''
+  position: absolute
+  background-image: url(../img/spritesheet.png)
+  background-repeat: no-repeat
+  width: 22px
+  height: 22px
+  background-position: -5px -5px
+  left: 0
+label
+  margin-top: 15px
+  font-size: 18px
+  color: #444444
+
+
+.top-header
+  min-height: 70px
+  background-color: #FFF
+  position: fixed
+  top: 0
+  z-index: 5
+  width: 100%
+
+.sub-width
+  width: 1163px
+  margin: auto
+  height: 100%
+
+.header-logo
+  margin-top: 20px
+  height: 40px
+  max-width: 384px
+
+.header-number
+  float: right
+  margin-top: 25px
+  max-width: 300px
+  i, span
+    float: left
+
+.header-menu
+  margin-top: 25px
+  i, span
+    float: left
+
+.header-number span, .header-menu span
+  font: 26px 'PT Sans' #444444
+  font-family: 'PT Sans', sans-serif
+  font-size: 26px
+  line-height: 26px
+  color: #444444
+  padding-bottom: 20px
+
+.header-number i, .header-menu i
+  margin-right: 6px
+.header-menu i
+  margin-top: 3px
+
+@media all and (max-width: 990px)
+  .header-logo
+    margin-right: 10px
+    float: left !important
+    margin-bottom: 2px
+  .header-number
+    float: left !important
+    margin-bottom: 2px
+  .header-menu
+    float: left !important
+    margin-bottom: 2px
+
+.slider-background
+  margin-top: 70px
+  min-height: 700px
+
+@media all and (max-width: 768px)
+  .slider-background
+    margin-top: 135px
+
+@media all and (max-width: 400px)
+  .slider-background
+    margin-top: 208px
+
+.slider-backrgound-right-block
+  // height: 100%
+  background: url(../img/video.png) no-repeat
+  background-size: cover
+
+.slider-backrgound-left-block
+  height: 100%
+  background: url(../img/slider-left.png) no-repeat
+  background-size: cover
+
+.slider-left-block-header
+  display: block
+  margin-top: 90px
+  margin-bottom: 38px
+  font-size: 40px
+  font-family: 'PT Sans', sans-serif
+  color: #fff
+  font-weight: bold
+
+.shapka-left-body
+  max-width: 630px
+
+.slider-left-block-list
+  padding: 0px
+  li
+    display: inline-block
+    width: 288px
+    margin-bottom: 20px
+    word-wrap: break-word
+    span
+      display: block
+      margin-top: 20px
+      width: 160px
+      float: left
+      font-size: 16px
+      font-family: 'PT Sans', sans-serif
+      color: #fff
+      word-wrap: break-word
+      font-weight: bold
+
+.slider-left-block-list-i
+  float: left
+  margin-right: 14px
+
+.slider-left-block-select-apartment
+  float: left
+  display: block
+  background: #fff
+  border: 2px solid #fff
+  border-radius: 3px
+  width: 248px
+  height: 64px
+  margin-right: 20px
+  font-size: 16px
+  font-family: 'PT Sans', sans-serif
+  color: #20a9c7
+  font-weight: bold
+  margin-bottom: 10px
+
+.slider-left-block-task-question
+  float: left
+  display: block
+  background: transparent
+  border: 2px solid #fff
+  border-radius: 3px
+  width: 248px
+  height: 64px
+  font-size: 16px
+  font-family: 'PT Sans', sans-serif
+  color: #fff
+  font-weight: bold
+  margin-bottom: 10px
+
+@media all and (max-width: 768px)
+  .slider-left-block-task-question
+    width: 200px
+    margin-bottom: 75px
+  .slider-left-block-select-apartment
+    width: 200px
+
+.slider-right-block-header
+  display: block
+  margin: auto
+  width: 100%
+  margin-top: 190px
+  margin-bottom: 38px
+  font-size: 44px
+  font-family: 'PT Sans', sans-serif
+  color: #fff
+  font-weight: bold
+  text-align: center
+
+.play-video
+  -moz-transition: all 1s ease-out
+  -o-transition: all 1s ease-out
+  -webkit-transition: all 1s ease-out
+  cursor: pointer
+.play-video:hover
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+
+
+.features
+  min-height: 586px
+  background: url(../img/advantages.png) no-repeat
+  background-size: cover
+
+.resp-width
+  max-width: 1250px
+
+.features-list
+  margin-top: 83px
+  padding: 0
+  text-align: center
+  li
+    display: inline-block
+    max-width: 370px
+    margin-bottom: 60px
+    margin-right: 40px
+    text-align: left
+    span
+      margin-top: 30px
+      float: left
+      font-size: 20px
+      font-family: 'PT Sans', sans-serif
+      color: #676767
+      width: 170px
+      p
+        margin-top: 4px
+    i
+      float: left
+      margin-right: 23px
+
+.features-buttons
+  margin: auto
+  max-width: 680px
+  // padding-left: 25%
+  margin-bottom: 75px
+
+.features-buttons-select-apartment
+  float: left
+  display: block
+  background: #0aaed3
+  border: 2px solid #0aaed3
+  border-radius: 3px
+  width: 320px
+  height: 64px
+  margin-right: 20px
+  font-size: 16px
+  font-family: 'PT Sans', sans-serif
+  color: #fff
+  font-weight: bold
+  margin-bottom: 10px
+
+.features-buttons-task-question
+  float: left
+  display: block
+  background: transparent
+  border: 2px solid #0aaed3
+  border-radius: 3px
+  width: 320px
+  height: 64px
+  font-size: 16px
+  font-family: 'PT Sans', sans-serif
+  color: #0aaed3
+  font-weight: bold
+  margin-bottom: 10px
+
+@media all and (max-width: 768px)
+  .features-buttons-select-apartment
+    width: 200px
+    font-size: 14px
+  .features-buttons-task-question
+    width: 200px
+    font-size: 14px
+
+.new-apartment-backrgound
+  min-height: 718px
+
+.new-apartment-backrgound-left-block
+  height: 100%
+  // background: url(../img/new-apartment-slider.png) no-repeat
+
+.new-apartment-backrgound-right-block
+  float: right
+  height: 100%
+  width: 60%
+  background-color: #fff
+
+.new-apartment
+  position: relative
+  height: 718px
+  margin-top: -718px
+
+#slideshow1, #slidesContainer1
+  margin: 0 0
+  max-width: 650px
+  height: 100% !important
+  overflow: auto /* разрешаем прокрутку */
+  position: relative
+#slideshow1 #slidesContainer1 .slide1
+  margin: 0 auto
+  max-width: 650px
+  height: 100% !important
+/**
+ * Slideshow controls style rules.
+ */
+.control1
+  display: block
+  width: 39px
+  height: 263px
+  text-indent: -10000px
+  position: absolute
+  cursor: pointer
+#leftControl1
+  z-index: 5
+  top: 50%
+  left: 10px
+  background: transparent url('../img/leftarrow.png') no-repeat 0 0
+#rightControl1
+  z-index: 5
+  top: 50%
+  right: 0
+  background: transparent url('../img/raightarrow.png') no-repeat 0 0
+
+.new-apartment-left-block
+  position: absolute
+  width: 384px
+  float: left
+
+.new-apartment-right-block
+  padding-left: 40px
+  padding-top: 66px
+  padding-right: 50px
+
+.new-apartment-right-block-header
+  font-size: 42px
+  font-family: 'PT Sans', sans-serif
+  color: #0aaed3
+  font-weight: bold
+  display: block
+
+.new-apartment-right-block-text
+  font-size: 20px
+  font-family: 'PT Sans', sans-serif
+  color: #696969
+  p
+    margin: 30px 0
+
+.p-min
+  margin: 5px 0 !important
+
+.new-apartment-right-block-buttons
+  margin-top: 50px
+  margin-bottom: 75px
+
+.discounts
+  min-height: 640px
+  background: url(../img/discounts.png) no-repeat
+  background-size: cover
+  a:hover
+    text-decoration: none
+
+.discounts-header
+  font-size: 46px
+  font-family: 'PT Sans', sans-serif
+  color: #ffffff
+  font-weight: bold
+  display: block
+  margin: auto
+  max-width: 390px
+  margin-top: 70px
+  margin-bottom: 100px
+
+.discounts-list-image
+  background: url(../img/discount-image.png) no-repeat
+  width: 163px
+  height: 163px
+  display: block
+  float: left
+  margin-right: 24px
+
+.discounts-list
+  padding: 0
+  margin-bottom: 55px
+  text-align: center
+  li
+    margin-bottom: 10px
+    text-align: left
+    display: inline-block
+    max-width: 570px
+    margin-right: 40px
+
+.discounts-list-description
+  max-width: 370px
+  float: left
+
+.discounts-list-description-date
+  font-size: 16px
+  color: #fff
+  display: block
+  margin-bottom: 23px
+
+.discounts-list-description-title
+  font-size: 22px
+  color: #fff
+  display: block
+  font-weight: bold
+  margin-bottom: 23px
+
+.discounts-list-description-text
+  font-size: 18px
+  color: #fff
+  display: block
+  margin-bottom: 23px
+
+.discounts-list-description-button
+  float: left
+  display: block
+  background: transparent
+  border: 2px solid #fff
+  border-radius: 3px
+  width: 130px
+  height: 27px
+  font-size: 14px
+  font-family: 'PT Sans', sans-serif
+  color: #fff
+  font-weight: bold
+
+.discounts-button
+  display: block !important
+  background: #fff
+  border: 2px solid #fff
+  border-radius: 3px
+  width: 320px
+  height: 64px
+  font-size: 16px
+  font-family: 'PT Sans', sans-serif
+  color: #0aaed3
+  font-weight: bold
+  margin-bottom: 75px
+
+@media all and (max-width: 768px)
+  .discounts-button
+    width: 200px
+
+.banks
+  min-height: 900px
+  background-color: #fff
+  a:hover
+    text-decoration: none
+
+.banks-header
+  display: block
+  margin: auto
+  color: #0aaed3
+  max-width: 672px
+  font-size: 46px
+  font-weight: bold
+  margin-top: 80px
+  text-align: center
+
+.bank-button
+  display: block !important
+  background: #0aaed3
+  border: 2px solid #0aaed3
+  border-radius: 3px
+  width: 320px
+  height: 64px
+  font-size: 16px
+  font-family: 'PT Sans', sans-serif
+  color: #fff
+  font-weight: bold
+  margin-bottom: 75px
+
+@media all and (max-width: 768px)
+  .bank-button
+    width: 250px
+    margin: auto
+    margin-bottom: 75px
+
+.banks-list
+  padding-left: 3%
+  margin-bottom: 60px
+  // min-width: 380px
+
+.banks-list-item
+  display: inline-block
+  margin-right: 105px
+  margin-top: 150px
+  height: 80px
+
+@media all and (max-width: 768px)
+  .banks-list-item
+    width: 177px
+
+.banks-list-percent
+  width: 62px
+  height: 62px
+  border-radius: 50%
+  background-color: #0aaed3
+  color: #fff
+  font-size: 14px
+  float: right
+  margin-right: -62px
+  margin-top: -88px
+  text-align: center
+
+.banks-list-percent-text
+  display: block
+  margin-left: 12px
+  margin-top: 10px
+  width: 30px
+  text-align: center
+  color: #fff
+  line-height: 18px
+
+.select-apartment
+  background-color: #fafafa
+
+.select-apartment-header
+  color: $color-blue
+  font-size: 46px
+  text-align: center
+  margin: auto
+  display: block
+  margin-top: 70px
+  font-weight: bold
+  margin-bottom: 43px
+
+.select-apartment-buttons-param, .select-apartment-buttons-genplan
+  width: 220px
+  border: 2px solid $color-blue
+  font-size: 18px
+  font-weight: bold
+  height: 45px
+  border-radius: 5px
+  float: left
+  margin-bottom: 10px
+
+.select-apartment-buttons-param
+  background-color: $color-blue
+  color: #fff
+  margin-right: 41px
+
+.select-apartment-buttons-genplan
+  background-color: #fafafa
+  color: $color-blue
+
+.select-apartment-buttons
+  margin: auto
+  max-width: 490px
+  margin-bottom: 70px
+
+@media all and (max-width: 768px)
+  .select-apartment-buttons
+    max-width: 200px
+
+.select-apartment
+  min-height: 1120px
+  .sortby
+    margin-bottom: 45px
+    span
+      float: left
+      font-size: 16px
+      display: block
+      margin-right: 55px
+    .sortby-value
+      cursor: pointer
+    .sortby-value:after
+      content: ''
+      display: block
+      background-image: url(../img/spritesheet.png);
+      background-repeat: no-repeat;
+      width: 8px;
+      height: 14px;
+      background-position: -353px -392px;
+      float: right
+      margin-left: 4px
+      margin-top: 3px 
+    .title
+      font-weight: bold
+  .select-apartment-filter
+    border-bottom: 3px dotted #a8a8a8
+    padding-bottom: 36px
+    margin-bottom: 30px
+    .floor
+      // width: 25%
+    .area
+      // width: 25%
+    .price
+      // width: 50%
+    .floor, .area
+      input::-webkit-input-placeholder
+        text-align: center
+      input
+        text-align: center
+        max-width: 50px
+      .range
+        max-width: 210px
+    .price
+      input
+        padding-left: 15px
+        max-width: 213px
+      .range
+        max-width: 500px
+
+    .floor, .area, .price
+      float: left
+      .title
+        font-size: 18px
+        font-weight: bold
+        color: #444444
+        margin-bottom: 30px
+        display: block
+      input
+        height: 35px
+        box-sizing: border-box
+        margin-bottom: 10px
+      .from
+        float: left
+        margin-right: 50px
+        span
+          font-size: 18px
+      .to
+        float: left
+        span
+          font-size: 18px
+      .inputs
+        margin-bottom: 15px
+      .range
+        margin-left: 20px
+      .range-vals
+        max-width: 250px
+        margin-top: 4px
+        font-size: 18px
+        .left-val
+          float: left
+        .right-val
+          float: right
+    .price
+      .range-vals
+        max-width: 550px
+    .select-apartment-filter-bot
+      margin-top: 20px
+      .filter-checkboxes
+        float: left
+        label
+          margin-bottom: 10px
+          margin-right: 30px
+      button
+        float: right
+        width: 220px
+        border: 2px solid $color-blue
+        font-size: 18px
+        height: 45px
+        border-radius: 5px
+        background-color: $color-blue
+        color: #fff
+        margin-right: 41px
+
+.apartment-list
+  padding: 0
+  list-style: none
+
+  .apartment-list-item
+    padding: 0
+    list-style: none
+    .main-desc
+      // margin-left: -25px
+      width: 180px
+      .title
+        width: 180px
+        color: $color-blue
+        font-size: 18px
+        font-weight: bold
+        margin-bottom: 10px
+      i
+        display: block
+        float: left
+        margin-right: 3px
+      span
+        display: block
+        float: left
+        margin-right: 5px
+        width: 65px
+        
+    li
+      display: inline-block
+      margin-bottom: 52px
+      float: left
+      margin-right: 30px
+      &:last-child
+        margin-right: 0px
+      i
+        float: left
+        margin-right: 10px
+      span
+        width: 110px
+        display: block
+        float: left
+      .pricee
+        width: 190px
+        font-size: 30px !important
+        font-weight: bold
+        color: $color-blue
+
+.show-else
+  width: 160px
+  margin: auto
+  i
+    float: left
+    margin-right: 10px
+  span
+    float: left
+    font-size: 20px
+    margin-bottom: 80px
+
+
+.autoparking
+  a:hover
+    text-decoration: none
+  box-sizing: content-box
+  min-height: 600px
+  background: url('../img/autoparking.png') no-repeat
+  background-position: center top
+  background-size: cover
+  .autoparking-header
+    color: #fff
+    font-size: 46px
+    font-weight: bold
+    display: block
+    margin: auto
+    padding-top: 130px
+    margin-bottom: 64px
+    text-align: center
+  .description
+    display: block
+    font-size: 36px
+    text-align: center
+    max-width: 732px
+    margin: auto
+    color: #fff
+    margin-bottom: 64px
+  button
+    width: 320px
+    height: 60px
+    background-color: #FFF
+    color: $color-blue
+    font-size: 18px
+    font-weight: bold
+    border: 2px solid #fff
+    border-radius: 5px
+    margin: auto
+    display: block
+    margin-bottom: 75px
+
+@media all and (max-width: 768px)
+  .autoparking
+    button
+      width: 250px
+
+.hod-and-news
+  a:hover
+    text-decoration: none
+  min-height: 720px
+  .stroy-proc
+    padding-top: 70px
+    min-height: 759px
+    height: 100%
+    background: url('../img/stroy-proc.png') no-repeat
+    background-position: center top;
+    background-size: cover
+
+  .news
+    padding-top: 70px
+    min-height: 760px
+    height: 100%
+    background-color: #f8f8f8
+    padding-left: 40px
+
+.else
+  i
+    float: left
+    margin-right: 10px
+  span
+    float: left
+    display: block
+    font-size: 20px
+    color: #444444
+    margin-bottom: 75px
+.sub-width
+  margin-top: 82px
+.header
+  display: block
+  font-weight: bold
+  color: $color-blue
+  font-size: 46px
+button
+  width: 150px
+  height: 30px
+  background-color: transparent
+  color: $color-blue
+  font-size: 14px
+  font-weight: bold
+  border: 2px solid $color-blue
+  border-radius: 5px
+  display: block
+  margin-bottom: 10px
+
+.stroy-proc-body
+  button
+    margin-bottom: 75px
+
+.stroy-proc-body-dates
+  padding-left: 12px
+  border-left: 3px solid #fff
+  li
+    list-style-type: none;
+    margin-bottom: 50px
+    .list-header
+      font-size: 18px
+      color: #fff
+      display: block
+      margin-bottom: 20px
+    .description
+      font-size: 14px
+      color: #fff
+    .stroy-proc-body-dates-sublist
+      margin-bottom: 20px
+      padding: 0
+      li
+        display: inline-block
+        width: 120px
+        height: 80px
+        margin-right: 10px
+        background-color: #6f6f6f
+        margin-bottom: 0px
+
+.stroy-proc-left-body
+  max-width: 550px
+
+.news-body-list
+  padding: 0
+  list-style: none
+  li
+    border-left: 3px solid $color-blue
+    margin-bottom: 27px
+    padding-left: 26px
+    .news-list-item-date
+      display: block
+      font-size: 16px
+      color: #444444
+      margin-bottom: 20px
+    .news-list-item-title
+      display: block
+      font-size: 28px
+      font-weight: bold
+      color: $color-blue
+      margin-bottom: 20px
+    .new-list-item-description
+      display: block
+      font-size: 18px
+      color: #444444
+      margin-bottom: 20px
+
+.dom-rasp
+  min-height: 340px
+  background-color: #FFF
+  .header
+    font-size: 46px
+    text-align: center
+    color: $color-blue
+    display: block
+    font-weight: bold
+    margin-top: 70px
+    margin-bottom: 45px
+  .description
+    text-align: center
+    display: block
+    font-size: 20px
+    max-width: 1160px
+    margin-bottom: 90px
+.map
+  max-height: 676px
+  // background: url('../img/map-wide.jpeg') no-repeat
+  background-position: center top
+  background-size: cover
+  overflow: hidden
+  img
+    width: 100%
+
+.map-history
+  .center-content
+    text-align: center
+  .map-history-list
+    text-align: center
+    display: inline-block;
+    margin: auto
+    li
+      display: inline-block
+      width: 100px
+      height: 100px
+      margin-top: 30px
+      float: left
+    span
+      display: block
+
+.complete-objects
+  min-height: 710px
+  .header
+    font-size: 46px
+    text-align: center
+    color: $color-blue
+    display: block
+    font-weight: bold
+    margin-top: 70px
+    margin-bottom: 55px
+  .complete-objects-list
+    margin-bottom: 35px
+    text-align: center
+    padding: 0
+    li:last-child
+      margin-right: 0
+    // margin-right: -75px
+    li
+      max-width: 350px
+      margin-bottom: 30px
+      margin-right: 65px
+      display: inline-block
+      span
+        display: block
+        text-align: center
+        font-size: 23px
+        color: #444444
+      img
+        display: block
+        margin: auto
+        margin-bottom: 53px
+  .buttons
+    margin: auto
+    max-width: 680px
+    margin-bottom: 80px
+
+@media all and (max-width: 768px)
+  .complete-objects
+    .buttons
+      max-width: 200px
+
+@media all and (max-width: 700px)
+  .complete-objects
+    .complete-objects-list
+      li
+        margin-right: 0 !important
+
+
+.about
+  background: url('../img/about.png') no-repeat
+  min-height: 670px
+  background-size: cover
+  .header
+    font-size: 46px
+    text-align: center
+    color: #fff
+    display: block
+    font-weight: bold
+    margin-top: 70px
+    margin-bottom: 35px
+  .about-body
+    margin-bottom: 50px
+    .description
+      display: block
+      max-width: 480px
+      p
+        font-size: 20px
+        color: #fff
+    .about-list
+      max-width: 800px
+      padding: 0
+      li
+        width: 290px
+        display: inline-block
+        margin-bottom: 20px
+        i
+          float: left
+          margin-right: 20px
+        .about-list-item-description
+          float: left
+          .primary
+            display: block
+            margin-top: 20px
+            font-size: 20px
+            color: #fff
+          .non-primary
+            font-size: 16px
+            color: #fff
+  button
+    width: 320px
+    height: 60px
+    background-color: #FFF
+    color: $color-blue
+    font-size: 18px
+    font-weight: bold
+    border: 2px solid #fff
+    border-radius: 5px
+    margin: auto
+    display: block
+    margin-bottom: 75px
+
+@media all and (max-width: 768px)
+  .about
+    button
+      width: 250px
+
+
+
+.consulting
+  min-height: 640px
+  .consulting-personal
+    max-width: 487px;
+    height: 100%
+    // background: url('../img/personal-item.png') no-repeat
+    margin-right: 10px
+    #slideshow, #slidesContainer
+      margin: 0 auto
+      width: 100%
+      height: 100%
+      overflow: auto /* разрешаем прокрутку */
+      position: relative
+    #slideshow #slidesContainer .slide
+      margin: 0 auto
+      width: 100%
+      height: 100%
+    /**
+     * Slideshow controls style rules.
+     */
+    .control
+      display: block
+      width: 39px
+      height: 263px
+      text-indent: -10000px
+      position: absolute
+      cursor: pointer
+    #leftControl
+      z-index: 5
+      top: 50%
+      left: 10px
+      background: transparent url('../img/leftrightarrow.png') no-repeat 0 0
+    #rightControl
+      z-index: 5
+      top: 50%
+      right: 0
+      background: transparent url('../img/bluerightarrow.png') no-repeat 0 0
+
+    .slide-description
+      margin-top: -115px
+      max-width: 440px
+      margin-left: 10px
+      background: $color-blue
+      opacity: 0.8
+      z-index: 5
+      position: relative
+      padding-top: 20px
+      padding-left: 20px
+      padding-bottom: 15px
+      .slide-description-title
+        color: #fff
+        font-size: 20px
+        display: block
+        font-weight: bold
+      .slide-description-text
+        color: #fff
+        font-size: 18px
+        display: block
+
+  .consulting-body
+    max-width: 660px;
+    .header
+      font-size: 46px
+      color: $color-blue
+      display: block
+      font-weight: bold
+      margin-top: 65px
+    .description
+      font-size: 20px
+      color: #444444
+      margin-bottom: 40px
+      display: block
+    form
+      .form-left
+        float: left
+        width: 48%
+        input
+          box-sizing: border-box
+          width: 100%
+          margin-bottom: 23px
+          border: 2px solid $color-blue
+          border-radius: 3px
+          height: 53px
+          padding-left: 20px
+          padding-right: 10px
+          font-size: 20px
+        label 
+          display: inline-block
+          cursor: pointer
+          position: relative
+        .checkbox
+          width: 0px
+        .checkbox:not(checked)
+          position: absolute
+          opacity: 0
+        .checkbox:not(checked) + label
+          position: relative /* будем позиционировать псевдочекбокс относительно label */
+          padding: 0 0 0 35px /* оставляем слева от label место под псевдочекбокс */
+        .checkbox:not(checked) + label:before
+          content: ''
+          position: absolute
+          background-image: url(../img/spritesheet.png)
+          background-repeat: no-repeat
+          width: 22px
+          height: 22px
+          background-position: -255px -309px;
+          left: 0
+        .checkbox:checked + label:before
+          content: ''
+          position: absolute
+          background-image: url(../img/spritesheet.png)
+          background-repeat: no-repeat
+          width: 22px
+          height: 22px
+          background-position: -5px -5px
+          left: 0
+        label
+          margin-top: 15px
+          width: 100%
+          font-size: 18px
+          color: #444444
+
+
+      .form-right
+        float: right
+        width: 48%
+        textarea
+          box-sizing: border-box
+          width: 100%
+          border: 2px solid $color-blue
+          border-radius: 3px
+          height: 205px
+          padding-left: 20px
+          padding-right: 10px
+          padding-top: 15px
+          font-size: 20px
+          overflow: hidden;
+          resize: none;
+          margin-bottom: 22px
+        button
+          width: 100%
+          height: 55px
+
+@media all and (max-width: 768px)
+  .consulting-body
+    form
+      .checkbox:not(checked) + label
+        padding: 0 0 0 30px !important
+      label
+        font-size: 15px !important
+        margin-bottom: 70px
+
+
+.footer
+  min-height: 525px;
+  .footer-img
+    min-height: 525px;
+    padding: 0
+    height: 100%
+    img
+      min-height: 525px;
+      width: 100%
+
+  .footer-contact
+    min-height: 525px;
+    padding: 0
+    background: $color-blue
+    background-size: cover
+    height: 100%
+    .header
+      font-size: 46px
+      color: #fff
+      display: block
+      font-weight: bold
+      margin-top: 65px
+      margin-left: 55px
+      max-width: 80%
+    .footer-contact-list
+      margin-left: 55px
+      list-style: none
+      padding: 0
+      li
+        margin-bottom: 20px
+      p
+        font-size: 24px
+        line-height: 39px
+        color: #fff
+        margin: 0
+      i
+        margin-top: 10px
+        float: left
+        margin-right: 20px
+      .footer-contact-list-body
+        float: left
+  .footer-map
+    min-height: 525px;
+    padding: 0
+    background: url('../img/map-wide.jpeg') no-repeat
+    background-position: center top
+    background-size: cover
+    height: 100%
+
+@media all and (max-width: 768px)
+  .footer-contact
+    width: 100%
+    .footer-contact-list
+      margin-left: 20px !important
+      p
+        font-size: 18px !important
+
+.subfooter
+  height: 111px
+  .left
+    margin-top: 50px
+    font-size: 18px
+    span
+      font-size: 18px
+  .center
+    margin-top: 50px
+    text-align: center
+    font-size: 18px
+  .right
+    margin-top: 50px
+    text-align: right
+    font-size: 18px
+
+@media all and (max-width: 400px)
+  .subfooter
+    .left, .center, .right
+      text-align: left !important
+
+.calc-panel, .compare-panel, .consult-panel, .about-panel
+  right: -120px
+  z-index: 3
+  position: fixed
+  width: 75px
+  background-color: $color-blue
+  border: 3px solid $color-blue
+  border-radius: 6px
+  height: 52px
+  padding-right: 5px
+  i
+    margin: 10px
+    float: left
+    margin-left: 15px
+  span
+    float: left
+    display: block
+    margin-top: 12px
+    color: #fff
+    margin-left: 10px
+  -moz-transition: all 0.3s ease-out
+  -o-transition: all 0.3s ease-out
+  -webkit-transition: all 0.3s ease-out
+  cursor: pointer
+.calc-panel
+  top: 90px
+  width: 180px
+.compare-panel
+  top: 152px
+  width: 180px
+.consult-panel
+  top: 212px
+  width: 180px
+.about-panel
+  top: 272px
+  width: 180px
+  i
+    margin-left: 10px
+    margin-top: 7px
+.calc-panel:hover
+  right: -3px
+.compare-panel:hover
+  right: -3px
+.consult-panel:hover
+  right: -3px
+.about-panel:hover
+  right: -3px
+
+@media all and (max-width: 768px)
+  .calc-panel, .compare-panel, .consult-panel, .about-panel
+    display: none
+
+.a-pointer
+  cursor: pointer
+
+.menu-modal
+  background-color: #FFF
+  .menu-logo
+    margin-bottom: 55px
+  .menu-links
+    margin-bottom: 60px
+    .menu-link
+      text-align: left
+      display: block
+      font-size: 20px
+      margin-bottom: 15px
+      color: #444444
+      &:hover
+        color: $color-blue
+  .menu-footer
+    .menu-footer-line
+      margin-bottom: 15px
+      i
+        float: left
+        margin-right: 10px
+        display: block
+      span
+        float: left
+        font-size: 20px
+        color: #444444
+        display: block
+        max-width: 85%
+        text-align: left
+
+
+.modal-close 
+  position: absolute
+  top: 5px
+  right: 5px
+
+  display: block
+  overflow: visible
+
+  width: 24px
+  height: 24px
+  margin: 0
+  padding: 0
+
+  cursor: pointer
+  -webkit-transition: color 0.2s
+  transition: color 0.2s
+  border: 0
+  outline: 0
+  background: url('/img/close.png') no-repeat
+
+.modal-close-outer
+  top: -25px
+  right: -25px
+
+
+// Акции - страница
+.page-discounts-header
+  background: url('../img/discounts-header.png') no-repeat
+  background-size: cover
+.page-header
+  min-height: 381px
+  padding-top: 138px
+  margin-bottom: 60px
+
+@media all and (max-width: 768px)
+  .page-header
+    padding-left: 15px
+
+.page-header-date
+  color: #fff
+  font-size: 32px
+  line-height: 32px
+  display: block
+  margin-bottom: 25px
+.page-header-title
+  color: #fff
+  font-size: 48px
+  display: block
+  font-weight: bold
+  line-height: 48px
+
+@media all and (max-width: 768px)
+  .page-header-date
+    font-size: 28px
+  .page-header-title
+    font-size: 36px
+
+//Акции и скидки
+
+.page-discounts-list-header
+  background: url('../img/discounts-white-header.png') no-repeat
+  background-size: cover
+  min-height: 627px
+  .page-header-title
+    color: #000
+    margin-bottom: 25px
+.page-header-description
+  color: #000
+  font-size: 32px
+  line-height: 32px
+  display: block
+  margin-bottom: 25px
+  margin-bottom: 38px
+
+.read-more
+  float: left
+  display: block
+  background: #0aaed3
+  border: 2px solid #0aaed3
+  border-radius: 3px
+  width: 250px
+  height: 57px
+  margin-right: 20px
+  font-size: 16px
+  font-family: 'PT Sans', sans-serif
+  color: #fff
+  font-weight: bold
+  margin-bottom: 10px
+
+.discounts-page-content
+  .discounts-list-image
+    border: 1px solid $color-blue
+    border-radius: 50%
+  .discounts-list-description
+    padding-top: 55px
+    .discounts-list-description-title
+      color: $color-blue
+      font-size: 18px
+      margin-bottom: 15px
+      line-height: 18px
+    .discounts-list-description-text
+      color: #000
+      font-size: 22px
+      line-height: 22px
+  .discounts-list li
+    margin-bottom: 45px
+    margin-right: 112px
+
+@media all and (max-width: 580px)
+  .discounts-page-content
+    .discounts-list-image
+      margin-left: auto
+      margin-right: auto
+      float: none
+    .discounts-list li
+      margin-bottom: 45px
+      margin-right: 0px
+      margin-left: auto
+      margin-right: auto
+
+// Документация
+.page-documentation-header
+  background: url('../img/documentation-header.png') no-repeat
+  background-size: cover
+  padding-top: 170px
+  .page-header-title
+    color: #fff
+    margin-bottom: 25px
+    text-align: center
+    font-size: 46px
+
+.documentation-content
+  .text p
+    font-size: 20px
+  .text
+    margin-bottom: 150px
+  .documents-title
+    text-align: center
+    span
+      color: $color-blue
+      font-size: 46px
+      font-weight: bold
+  .documents
+    margin-bottom: 160px
+  // .documents-list
+  //   margin-top: 83px
+  //   padding: 0
+  //   text-align: center
+  //   li
+  //     display: inline-block
+  //     max-width: 370px
+  //     margin-bottom: 80px
+  //     margin-right: 40px
+  //     text-align: left
+  //     span
+  //       margin-top: 30px
+  //       float: left
+  //       font-size: 20px
+  //       font-family: 'PT Sans', sans-serif
+  //       color: #000
+  //       width: 170px
+  //       p
+  //         margin-top: 4px
+  //     img
+  //       float: left
+  //       margin-right: 23px
+  .documents-list
+    margin-top: 83px
+    padding: 0
+    text-align: center
+    margin-bottom: 80px
+    li
+      display: block
+      margin-bottom: 30px
+      min-height: 45px
+      vertical-align: center
+      div
+        display: inline-block
+      span
+        float: left
+        font-size: 20px
+        line-height: 20px
+        font-family: 'PT Sans', sans-serif
+        color: #000
+        margin-top: 8px
+      img
+        float: left
+        margin-right: 23px
+  button
+    display: block
+    background: #0aaed3
+    border: 2px solid #0aaed3
+    border-radius: 3px
+    width: 300px
+    height: 57px
+    font-size: 16px
+    font-family: 'PT Sans', sans-serif
+    color: #fff
+    font-weight: bold
+    margin-bottom: 10px
+    margin: auto
+
+@media all and (max-width: 580px)
+  .documentation-content
+    .documents-list
+      li
+        margin-right: 0
+  .page-header-title
+    font-size: 34px !important
+  .documents-title
+    span
+      font-size: 34px !important
+
+
+// Новости
+.page-news-header
+  background: url('../img/news-header.png') no-repeat
+  background-size: cover
+  padding-top: 170px
+  .page-header-title
+    color: #fff
+    margin-bottom: 25px
+    text-align: center
+    font-size: 46px
+
+.news-page-content
+  padding-top: 60px
+
+.news-page-list
+  padding: 0
+  list-style: none
+  text-align:
+
+  li
+    margin: 0 auto
+    margin-bottom: 70px
+    display:inline
+    max-width: 900px
+  .news-page-list-image
+    display: block
+    float: left
+    margin-right: 24px
+
+  .news-page-list-description
+    max-width: 610px
+    float: left
+
+  .news-page-list-description-date
+    font-size: 20px
+    line-height: 20px
+    color: #444444
+    display: block
+    margin-bottom: 30px
+
+  .news-page-list-description-title
+    font-size: 40px
+    line-height: 40px
+    color: $color-blue
+    display: block
+    font-weight: bold
+    margin-bottom: 20px
+
+  .news-page-list-description-text
+    font-size: 26px
+    line-height: 26px
+    color: #444444
+    display: block
+    margin-bottom: 23px
+
+// О застройщике
+.page-news-header
+  background: url('../img/about-header.png') no-repeat
+  background-size: cover
+  padding-top: 170px
+  margin-bottom: 0px
+  .page-header-title
+    color: #fff
+    margin-bottom: 25px
+    text-align: center
+    font-size: 46px
+
+.about-page
+  background: #f8f8f8
+  padding-top: 100px
+  .description p
+    color: #444444 !important
+  .about-list-item-description span
+    color: #444444 !important
+  button
+    color: #fff
+    background: $color-blue
+
+.about-content
+  background: #f8f8f8
+  padding-top: 90px
+
+
+// Ход строительства
+.page-process-header
+  background: url('../img/process-header.png') no-repeat
+  background-size: cover
+  padding-top: 170px
+  .page-header-title
+    color: #fff
+    margin-bottom: 25px
+    text-align: center
+    font-size: 46px
+
+.page-process-content
+  .page-process-content-list
+    border-left: 2px solid #a8a8a8
+    list-style: none
+    li
+      margin-bottom: 70px
+      overflow: visible !important
+      display: block
+    .marker
+      background: url('../img/list-style-img.png') no-repeat
+      width: 20px
+      height: 20px
+      margin-left: -50px
+      margin-top: 13px
+      float: left
+    .list-header
+      color: $color-blue
+      font-size: 30px
+      font-weight: bold
+      margin-bottom: 32px
+      display: block
+    .description
+      color: #444444
+      font-size: 24px
+    .page-process-content-sublist
+      list-style: none
+      padding: 0
+      margin-bottom: 32px
+      li
+        width: 320px
+        height: 200px
+        background: #444444
+        float: left
+        margin-right: 32px
+        margin-bottom: 0px
+
+@media all and (max-width: 580px)
+  .page-process-content-sublist
+      li
+        max-width: 280px
+        margin-bottom: 10px !important
+    
+      
+// Ипотечный калькулятор
+.page-calc-header
+  background: url('../img/calc-header.png') no-repeat
+  background-size: cover
+  padding-top: 170px
+  .page-header-title
+    color: #fff
+    margin-bottom: 25px
+    text-align: center
+    font-size: 46px
+
+.page-calc-content
+  .calc-line
+    padding: 15px 0px
+  .calc-line-left, .calc-line-right
+    float: left
+    // width: 50%
+  .calc-line-left
+    padding-right: 15px
+  .calc-input-name
+    padding-top: 4px
+    color: #444444
+    font-size: 18px
+    display: block
+    float: left
+  input
+    float: right
+  .input-story
+    padding-top: 4px
+    float: right
+    width: 70px
+    display: block
+    text-align: center
+    font-size: 18px
+    color: #9d9d9d
+  .noUi-handle-lower
+    display: none
+  .calc-range
+    float: left
+    width: 270px
+    margin-top: 13px
+  .regulator-from
+    padding-top: 4px
+    float: left
+    font-size: 18px
+    color: #444444
+    width: 85px
+    padding-right: 18px
+    text-align: right
+    margin-left: 55px
+  .regulator-to
+    padding-top: 4px
+    float: left
+    font-size: 18px
+    color: #444444
+    width: 120px
+    padding-left: 15px
+  button
+    margin-top: 30px
+    max-width: 269px
+    height: 45px
+  .features-buttons
+    max-width: 580px
+    margin-bottom: 55px
+  .info-inner
+    span
+      font-size: 19px
+      font-weight: bold
+    .summ
+      color: $color-blue
+      font-size: 40px
+      margin-left: 10px
+  .info
+    margin-left: 100px
+  .border-bot
+    border-bottom: 2px dotted #c3c3c3
+
+// .modal-video
+//   position: fixed
+//   display: none
+//   -webkit-transition: opacity 400ms ease-in
+//   -moz-transition: opacity 400ms ease-in
+//   transition: opacity 400ms ease-in
+//   top: 0
+//   right: 0
+//   bottom: 0
+//   left: 0
+//   background: rgba(0,0,0,0.8)
+//   z-index: 99999
+// .modal-video-body
+//   position: relative
+//   margin: 10% auto
+//   // background: #fff
+//   max-width: 560px
+//   padding: 0
+
+// @media all and (max-width: 580px)
+//   .modal-video-body
+//     max-width: 300
+
+
+// Сравнение страница
+.page-compare-header
+  background: url('../img/compare-header.png.png') no-repeat
+  background-size: cover
+  padding-top: 170px
+  .page-header-title
+    color: #fff
+    margin-bottom: 25px
+    text-align: center
+    font-size: 46px
+
+.page-compare-calc-content
+  background-color: #f8f8f8
+  padding-top: 40px
+  .page-header-title
+    color: $color-blue
+    text-align: center
+    margin-bottom: 30px
+
+.compare-content
+  padding-top: 40px
+
+
+
+
+  
